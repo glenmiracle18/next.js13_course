@@ -4,6 +4,8 @@
 
 Promptly is a dynamic web application that provides users with a platform to share, explore, and engage with creative prompts. Built with Next.js 14, Tailwind CSS, React.js, TypeScript, Node.js, MongoDB (using Mongoose), REST API, and Docker, Promptly offers a seamless and responsive user experience.
 
+
+
 ## Features
 
 ### 1. Authentication
