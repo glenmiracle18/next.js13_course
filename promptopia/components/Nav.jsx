@@ -7,7 +7,7 @@ import { signIn, signOut, useSession, getProviders} from 'next-auth/react';
 import React from 'react'
 
 const Nav = () => {
-  // logIn/SignIn logic with auth providers like google
+  // logIn/SignIn logic with auth providers like google/github
   const { data: session } = useSession();
   const [providers, setProviders ] = useState(null);
   const [toggleDropdown, setToggleDropdown] = useState(false)
@@ -64,7 +64,7 @@ const Nav = () => {
             </Link>
           </div>
         ): ( 
-          // this is condition for when the isUserLoggedIn is false
+          // this is condition for when the user is not yet signed in
           <>
             {providers && 
               Object.values(providers).map((provider) => (
